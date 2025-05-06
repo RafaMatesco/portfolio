@@ -7,8 +7,10 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-y: auto;
+
+  font-family: 'Fira Code', monospace !important;
 }
-body img {
+body .background_image {
   filter: blur(4px);
   object-fit: cover;
   width: 100%;
@@ -25,6 +27,10 @@ footer {
   text-align: center;
 }
 
+#homeLink i {
+  font-size: 35px;
+}
+
 footer {
   height: 8vh;
 }
@@ -32,28 +38,42 @@ footer {
 .content {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   height: 100%;
-}
 
-main {
   background: linear-gradient(to bottom, rgba(0, 0, 54, 0.95) 0%, rgba(0, 0, 54, .8) 30%, rgba(0, 0, 54, .8) 85%, rgba(0, 0, 54, 0.95) 100%);
   color: white;
   padding: 1rem;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
 }
 
-aside {
-  background-color: #ddd;
-  color: #111;
-  padding: 1rem;
-  height: 100%;
+.about_me{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
-#homeLink i {
-  font-size: 35px;
+.profile{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+
+  span{
+    padding-right: 25%;
+  }
 }
+
+.profile_image img{
+  width: 15vw;
+  height: 22vh;
+
+  border-radius: 20px;
+}
+
+.profile_image {
+  justify-self: end; /* Move a imagem para o final */
+}
+
+.profile_text {
+  justify-self: start; /* Mantém o texto no início */
+} 
