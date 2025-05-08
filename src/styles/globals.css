@@ -14,12 +14,23 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.my_noscrollbar_scroll_bar_iframe{
+  display: none !important;
 }
 
 body {
@@ -36,6 +47,8 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-y: auto;
+
+  scrollbar-width: none;
 }
 
 body .background_image {
@@ -81,10 +94,14 @@ footer {
   grid-template-rows: auto;
   justify-items: center;
 
+  row-gap: 5%;
+
   width: 100%;
 }
 
-.projects, .skills {
+.projects,
+.skills,
+.curriculo {
   text-align: center;
   width: 90%;
 }
@@ -97,6 +114,9 @@ footer {
 }
 
 .items-category {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   overflow: hidden;
 
@@ -105,6 +125,10 @@ footer {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 300ms;
+
+  ul{
+    padding: 0 20%;
+  }
 }
 
 .items-category:hover {
@@ -172,10 +196,26 @@ footer {
   }
 }
 
+
 .profile_text {
   justify-self: start; /* Mantém o texto no início */
   font-size: 1rem;
   h1 {
     font-size: 4rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .profile_image img {
+    width: 100% !important; 
+    height: auto !important; 
+  }
+
+  .profile_text{
+    font-size: 1rem;
+    h1{
+      font-size: 3rem;
+    }
   }
 }

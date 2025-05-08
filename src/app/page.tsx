@@ -19,19 +19,38 @@ export default function Home() {
           </div>
         </div>
         <div className="about-me pt-5">
+          <div className="curriculo">
+            <h1>Formação</h1>
+            <div className="items-container">
+              <div className="items-category px-5">
+                <h5>Análise e desenvolvimento de sistemas (cursando)</h5>
+                <ul>
+                  <li>Fatec - Prof. Jessen Vidal</li>
+                  <li>01/2025 -> 12/2027</li>
+                </ul>
+              </div>
+
+              <div className="items-category px-5">
+                <h5>Técnico em informática (Finalizado)</h5>
+                <ul>
+                  <li>Colégios UNIVAP (unidade centro)</li>
+                  <li>01/2021 -> 12/2023</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="projects">
             <h1>Projetos</h1>
             <div className="items-container">
-              <div className="items-category">
+              <div className="items-category px-5">
                 <h3>Projeto X</h3>
               </div>
 
-              <div className="items-category">
+              <div className="items-category px-5">
                 <h3>Projeto Y</h3>
-              
               </div>
 
-              <div className="items-category">
+              <div className="items-category px-5">
                 <h3>Projeto Z</h3>
               </div>
             </div>
@@ -39,8 +58,8 @@ export default function Home() {
           <div className="skills">
             <h1>Tecnologias</h1>
             <div className="items-container">
-              <div className="items-category">
-                <h3>🌐 Linguagens</h3>
+              <div className="items-category px-5">
+                <h3>Linguagens</h3>
                 <div className="items-icons">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3" title="CSS3" />
@@ -54,7 +73,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="items-category">
+              <div className="items-category px-5">
                 <h3>🛠️ Frameworks & Libraries</h3>
                 <div className="items-icons">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
@@ -66,7 +85,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="items-category">
+              <div className="items-category px-5">
                 <h3>⚙️ Ferramentas</h3>
                 <div className="items-icons">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" title="VSCode" />
