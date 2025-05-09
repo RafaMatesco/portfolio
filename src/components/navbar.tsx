@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <span className="navbar-brand user-select-none">Bem vindo ao meu porfólio!</span>
+          <span className="navbar-brand user-select-none mx-5">Bem vindo ao meu porfólio!</span>
           <button
             className="navbar-toggler"
             type="button"

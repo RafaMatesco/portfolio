@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en" data-bs-theme="dark">
       <head>
         <title>Portfólio Rafael Matesco</title>
+        <link rel="icon" type="image/x-icon" href="../"></link>
       </head>
       <body className={`${firaCode.variable} user-select-none`}>
         <img className="background_image" src={background.src} alt="" />

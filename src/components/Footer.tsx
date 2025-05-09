@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
             <use xlinkHref="#bootstrap"></use>
           </svg>
         </a>
-        <span className="mb-3 mb-md-0 text-body-secondary">Feito por Rafael Matesco</span>
+        <span className="mb-3 mb-md-0 text-body-secondary mx-5">Feito por Rafael Matesco</span>
       </div>
 
       <ul className="nav col-md-4 justify-content-end pe-4 list-unstyled d-flex">
-        <li className="ms-3">
+        <li className="mx-5">
           <a className="text-body-secondary" href="#" aria-label="Instagram">
             <i className="bi bi-instagram fs-2"></i>
           </a>
