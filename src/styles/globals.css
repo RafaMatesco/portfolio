@@ -80,7 +80,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  justify-items: center;
+  justify-items: stretch;
 
   row-gap: 5%;
 
