@@ -310,6 +310,17 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: stretch;
+
+    row-gap: 3%;
+    height: 100%;
+    width: 100%;
+  }
+
   .profile_image img {
     width: 100% !important;
     height: auto !important;
