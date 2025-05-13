@@ -1,6 +1,53 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
+  const [ativo, setAtivo] = useState(false);
+
+  const projectsClick = () => {
+    const elemento = document.querySelector(".projects");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+
+      // Remove a classe após um pequeno atraso para criar o efeito de destaque
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
+  const profileClick = () => {
+    const elemento = document.querySelector(".profile");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+
+      // Remove a classe após um pequeno atraso para criar o efeito de destaque
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
+  const skillsClick = () => {
+    const elemento = document.querySelector(".skills");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+
+      // Remove a classe após um pequeno atraso para criar o efeito de destaque
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
+  const curriculoClick = () => {
+    const elemento = document.querySelector(".curriculo");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+
+      // Remove a classe após um pequeno atraso para criar o efeito de destaque
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -19,8 +66,17 @@ const Navbar: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end pe-4" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link" href="#" id="homeLink">
-                <i className="bi bi-house" id="homeIcon"></i>
+              <a className="nav-link mx-2" href="#" onClick={profileClick}>
+                <i className="bi bi-person" id="homeIcon"></i>
+              </a>
+              <a className={`nav-link mx-2`} href="#curriculo" onClick={curriculoClick}>
+                <i className="bi bi-mortarboard"></i>
+              </a>
+              <a className={`nav-link mx-2`} href="#skills" onClick={skillsClick}>
+                <i className="bi bi-tools"></i>
+              </a>
+              <a className={`nav-link mx-2`} href="#projects" onClick={projectsClick}>
+                <i className="bi bi-folder"></i>
               </a>
             </div>
           </div>

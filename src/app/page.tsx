@@ -24,8 +24,8 @@ export default function Home() {
 
       <div className="about-me pt-5">
         <div className="esquerda">
-          <div className="curriculo">
-            <h1>Formação</h1>
+          <div className="curriculo" id="curriculo">
+            <h1>Formação <i className="bi bi-mortarboard"></i></h1>
             <div className="items-container">
               <div className="items-category px-5 py-4">
                 <h5>Análise e desenvolvimento de sistemas (cursando)</h5>
@@ -40,8 +40,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="skills">
-            <h1>Habilidades</h1>
+          <div className="skills" id="skills">
+            <h1>Habilidades <i className="bi bi-tools"></i></h1>
             <div className="items-container">
               <div className="items-category px-5 py-4">
                 <h5>Linguagens</h5>
@@ -85,8 +85,8 @@ export default function Home() {
         </div>
 
         <div className="direita">
-          <div className="projects">
-            <h1>Projetos</h1>
+          <div className="projects" id="projects">
+            <h1>Projetos <i className="bi bi-folder"></i></h1> 
             <div className="items-container">
               <a href="https://github.com/RafaMatesco/TCC-UNIVAP-2023" target="_blank" className="project-category px-5 py-4">
                 <h5 className="project-category-1">Quadro de avisos</h5>
