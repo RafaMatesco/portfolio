@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     }
   };
   const profileClick = () => {
-    const elemento = document.querySelector(".profile");
+    const elemento = document.querySelector(".about-me");
     if (elemento) {
       elemento.classList.add("com-sombra");
 

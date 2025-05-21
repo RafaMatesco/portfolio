@@ -1,7 +1,6 @@
 import { Fira_Code } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
-import background from "../assets/waterfall.gif";
 
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="../"></link>
       </head>
       <body className={`${firaCode.variable} user-select-none`}>
-        <img className="background_image" src={background.src} alt="" />
+        {/* <img className="background_image" src={background.src} alt="" /> */}
         <Navbar></Navbar>
         {children}
         <Footer></Footer>

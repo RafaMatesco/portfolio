@@ -1,0 +1,11 @@
+Verde Natural
+
+Primária: #2E7D32 (Verde floresta)
+
+Secundária: #62ad64 (Verde claro)
+
+Neutro escuro: #1B1B1B
+
+Neutro claro: #F5F5F5
+
+Acento: #FFC107 (Âmbar)
