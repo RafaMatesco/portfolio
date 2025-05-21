@@ -3,8 +3,8 @@ import React from "react";
 const Profile: React.FC = () => {
   return (
     <div className="profile px-5">
-      <div className="profile_image">
-        <img src="https://avatars.githubusercontent.com/u/89911624?v=4" alt="" />
+      <div className="profile_image neon-glow">
+        <img src="./pfp.jpg" alt="" />
       </div>
       <div className="profile_text">
         <span>Meu nome é</span>

@@ -12,11 +12,13 @@ export default function Home() {
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const rect = mainRef.current?.getBoundingClientRect();
     if (!rect) return;
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    mainRef.current?.style.setProperty("--glow-x", `${x}%`);
-    mainRef.current?.style.setProperty("--glow-y", `${y}%`);
+    const x = Math.round(e.clientX - rect.left);
+    const y = Math.round(e.clientY - rect.top);
+    mainRef.current?.style.setProperty("--glow-x", `${Math.round((x / rect.width) * 100)}%`);
+    mainRef.current?.style.setProperty("--glow-y", `${Math.round((y / rect.height) * 100)}%`);
   };
+
+
   return (
     <div className="polkadot">
       <div

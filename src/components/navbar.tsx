@@ -8,8 +8,6 @@ const Navbar: React.FC = () => {
     const elemento = document.querySelector(".projects");
     if (elemento) {
       elemento.classList.add("com-sombra");
-
-      // Remove a classe após um pequeno atraso para criar o efeito de destaque
       setTimeout(() => {
         elemento.classList.remove("com-sombra");
       }, 1000);
@@ -19,8 +17,6 @@ const Navbar: React.FC = () => {
     const elemento = document.querySelector(".about-me");
     if (elemento) {
       elemento.classList.add("com-sombra");
-
-      // Remove a classe após um pequeno atraso para criar o efeito de destaque
       setTimeout(() => {
         elemento.classList.remove("com-sombra");
       }, 1000);
@@ -30,8 +26,6 @@ const Navbar: React.FC = () => {
     const elemento = document.querySelector(".skills");
     if (elemento) {
       elemento.classList.add("com-sombra");
-
-      // Remove a classe após um pequeno atraso para criar o efeito de destaque
       setTimeout(() => {
         elemento.classList.remove("com-sombra");
       }, 1000);
@@ -41,8 +35,6 @@ const Navbar: React.FC = () => {
     const elemento = document.querySelector(".curriculo");
     if (elemento) {
       elemento.classList.add("com-sombra");
-
-      // Remove a classe após um pequeno atraso para criar o efeito de destaque
       setTimeout(() => {
         elemento.classList.remove("com-sombra");
       }, 1000);
