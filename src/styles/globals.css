@@ -78,8 +78,14 @@ footer {
   padding: 1rem;
 
   position: relative;
-  background: radial-gradient(circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(98, 173, 100, 0.15) 0%, rgba(98, 173, 100, 0.1) 5%, transparent 15%);
-  transition: background 0.2s;
+  background: radial-gradient(
+    circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(98, 173, 100, 0.1) 0%,
+    rgba(98, 173, 100, 0.08) 2%,
+    rgba(98, 173, 100, 0.06) 4%,
+    rgba(98, 173, 100, 0.04) 6%,
+    transparent 10%
+  );
 }
 
 .profile {
@@ -151,6 +157,9 @@ footer {
 .title {
   color: var(--title);
 }
+.text {
+  color: var(--text);
+}
 .about-me h1::after {
   content: "";
   display: inline-block;
@@ -181,7 +190,7 @@ footer {
 }
 @keyframes neon-pulse {
   from {
-    text-shadow: 0 0 8px #62ad64, 0 0 16px #62ad64, 0 0 24px #2e7d32, 0 0 32px #2e7d32;
+    text-shadow: 0 0 4px #62ad64, 0 0 8px #62ad64, 0 0 12px #2e7d32, 0 0 16px #2e7d32;
   }
   to {
     text-shadow: 0 0 16px #62ad64, 0 0 32px #62ad64, 0 0 48px #2e7d32, 0 0 64px #2e7d32;
@@ -228,6 +237,34 @@ footer {
   overflow: hidden;
 }
 
+.contatos {
+  text-align: center;
+  height: 20vh;
+}
+.contatos-container {
+  display: grid;
+  place-items: center;
+
+  position: relative;
+  min-height: 60%;
+}
+.contatos-container .contatos-icon {
+  position: absolute;
+}
+.contatos-container .contatos-icon svg {
+  width: 70;
+  height: 70;
+  transition: fill 0.5s, filter 0.5s, width 0.5s, height 1s;
+  fill: var(--text);
+  filter: drop-shadow(0 0 2px #62ad6430) drop-shadow(0 0 4px #62ad6430) drop-shadow(0 0 6px #2e7d3230) drop-shadow(0 0 8px #2e7d32);
+}
+.contatos-container .contatos-icon svg:hover {
+  width: 80;
+  height: 80;
+  fill: var(--title);
+  filter: drop-shadow(0 0 4px #62ad6440) drop-shadow(0 0 8px #62ad6440) drop-shadow(0 0 12px #2e7d3240) drop-shadow(0 0 16px #2e7d32);
+}
+
 /* TIMELINE */
 .main-timeline {
   position: relative;
@@ -250,6 +287,12 @@ footer {
   position: relative;
   background-color: inherit;
   width: 50%;
+  z-index: 100;
+  opacity: 0;
+}
+.timeline.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 /* bolinha da timeline */
 .timeline::after {
@@ -267,11 +310,15 @@ footer {
 .left {
   padding: 0px 40px 20px 0px;
   left: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* card direita */
 .right {
   padding: 0px 0px 20px 40px;
   left: 50%;
+  transform: translateX(80px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* setinha card esquerda*/
 .left::before {

@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef } from "react";
+import Contatos from "@/components/Contatos";
 import Curriculo from "@/components/Curriculo";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -37,6 +38,7 @@ export default function Home() {
           <Curriculo></Curriculo>
           <Skills></Skills>
           <Projects></Projects>
+          <Contatos></Contatos>
         </div>
       </div>
     </div>

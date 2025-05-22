@@ -1,15 +1,43 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import quadro_avisos from "../assets/quadro-avisos.png";
 import health_calculator from "../assets/health-calculator.png";
 import pokemondle from "../assets/pokemondle.png";
+
+function useInView(threshold = 0.5) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = React.useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }else{
+          setVisible(false);
+        }
+      },
+      { threshold }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return [ref, visible] as const;
+}
+
 const Projects: React.FC = () => {
+  const [ref1, visible1] = useInView();
+  const [ref2, visible2] = useInView();
+  const [ref3, visible3] = useInView();
   return (
     <div className="projects mb-5" id="projects">
       <h1 className="title neon-glow">
-        Projetos <i className="bi bi-folder"></i>
+        <i className="bi bi-folder"></i> Projetos
       </h1>
       <div className="main-timeline text-white px-0">
-        <div className="timeline left">
+        <div ref={ref1} className={`timeline left${visible1 ? " visible" : ""}`}>
           <div className="card gradient-custom-left">
             <a href="https://github.com/RafaMatesco/TCC-UNIVAP-2023" target="_blank" className="card-body px-4 py-4">
               <h4>Quadro de avisos</h4>
@@ -25,7 +53,7 @@ const Projects: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="timeline right">
+        <div ref={ref2} className={`timeline right${visible2 ? " visible" : ""}`}>
           <div className="card gradient-custom-right">
             <a href="https://github.com/RafaMatesco/Feira-tecnica-2022" target="_blank" className="card-body px-4 py-4">
               <h4>Health Calculator</h4>
@@ -40,7 +68,7 @@ const Projects: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="timeline left">
+        <div ref={ref3} className={`timeline left${visible3 ? " visible" : ""}`}>
           <div className="card gradient-custom-left">
             <a href="https://github.com/RafaMatesco/pokemondle" target="_blank" className="card-body px-4 py-4">
               <h4>Pokemondle</h4>
@@ -57,8 +85,7 @@ const Projects: React.FC = () => {
         </div>
       </div>
 
-      <div className="projects-container">
-      </div>
+      <div className="projects-container"></div>
     </div>
   );
 };
