@@ -144,6 +144,7 @@ footer {
 }
 .about-me p,
 .curriculo div,
+.cursos div,
 .skills h5 {
   color: var(--text);
 }

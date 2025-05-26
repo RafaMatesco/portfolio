@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Contatos from "@/components/Contatos";
 import Curriculo from "@/components/Curriculo";
+import Cursos from "@/components/Cursos";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
@@ -36,6 +37,7 @@ export default function Home() {
         <div className="main">
           <AboutMe></AboutMe>
           <Curriculo></Curriculo>
+          <Cursos></Cursos>
           <Skills></Skills>
           <Projects></Projects>
           <Contatos></Contatos>
