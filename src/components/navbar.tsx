@@ -40,6 +40,15 @@ const Navbar: React.FC = () => {
       }, 1000);
     }
   };
+  const cursosClick = () => {
+    const elemento = document.querySelector(".cursos");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -58,16 +67,19 @@ const Navbar: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end pe-4" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link mx-2" href="#" onClick={profileClick}>
+              <a className="nav-link mx-3" href="#" onClick={profileClick}>
                 <i className="bi bi-person" id="homeIcon"></i>
               </a>
-              <a className={`nav-link mx-2`} href="#curriculo" onClick={curriculoClick}>
+              <a className={`nav-link mx-3`} href="#curriculo" onClick={curriculoClick}>
                 <i className="bi bi-mortarboard"></i>
               </a>
-              <a className={`nav-link mx-2`} href="#skills" onClick={skillsClick}>
+              <a className={`nav-link mx-3`} href="#curriculo" onClick={cursosClick}>
+                <i className="bi bi-book"></i>
+              </a>
+              <a className={`nav-link mx-3`} href="#skills" onClick={skillsClick}>
                 <i className="bi bi-tools"></i>
               </a>
-              <a className={`nav-link mx-2`} href="#projects" onClick={projectsClick}>
+              <a className={`nav-link mx-3`} href="#projects" onClick={projectsClick}>
                 <i className="bi bi-folder"></i>
               </a>
             </div>

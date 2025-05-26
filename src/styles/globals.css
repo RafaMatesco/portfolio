@@ -133,7 +133,8 @@ footer {
 .about-me,
 .projects,
 .skills,
-.curriculo {
+.curriculo,
+.cursos {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -157,6 +158,9 @@ footer {
 
 .title {
   color: var(--title);
+}
+.title a {
+  text-decoration: none;
 }
 .text {
   color: var(--text);
