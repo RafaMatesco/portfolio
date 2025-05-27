@@ -134,7 +134,8 @@ footer {
 .projects,
 .skills,
 .curriculo,
-.cursos {
+.cursos,
+.contatos {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;

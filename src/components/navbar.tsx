@@ -49,6 +49,15 @@ const Navbar: React.FC = () => {
       }, 1000);
     }
   };
+  const contatosClick = () => {
+    const elemento = document.querySelector(".contatos");
+    if (elemento) {
+      elemento.classList.add("com-sombra");
+      setTimeout(() => {
+        elemento.classList.remove("com-sombra");
+      }, 1000);
+    }
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -73,7 +82,7 @@ const Navbar: React.FC = () => {
               <a className={`nav-link mx-3`} href="#curriculo" onClick={curriculoClick}>
                 <i className="bi bi-mortarboard"></i>
               </a>
-              <a className={`nav-link mx-3`} href="#curriculo" onClick={cursosClick}>
+              <a className={`nav-link mx-3`} href="#cursos" onClick={cursosClick}>
                 <i className="bi bi-book"></i>
               </a>
               <a className={`nav-link mx-3`} href="#skills" onClick={skillsClick}>
@@ -81,6 +90,9 @@ const Navbar: React.FC = () => {
               </a>
               <a className={`nav-link mx-3`} href="#projects" onClick={projectsClick}>
                 <i className="bi bi-folder"></i>
+              </a>
+              <a className={`nav-link mx-3`} href="#contatos" onClick={contatosClick}>
+                <i className="bi bi-envelope"></i>
               </a>
             </div>
           </div>
