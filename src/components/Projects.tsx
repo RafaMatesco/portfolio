@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           <div className="card gradient-custom-right">
             <a href="https://github.com/RafaMatesco/TCC-UNIVAP-2023" target="_blank" className="card-body px-4 py-4">
               <h4>Quadro de avisos</h4>
-              <p className="mx-5">Sistema para melhorar a comunicação entre professores e alunos, com login por perfil.</p>
+              <p className="mx-5">Sistema para melhorar a comunicação entre professores e alunos, com login por perfil. Eu participei majoritariamente do front-end</p>
               <p className="mx-5">Resultado: Interface intuitiva que agiliza o acesso a avisos.</p>
               <img className="projects-image mb-3 mx-5" src={quadro_avisos.src} alt="Quadro de avisos" />
               <div className="skills-icons mx-5 my-3">
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
           <div className="card gradient-custom-left">
             <a href="https://github.com/RafaMatesco/TCC-UNIVAP-2023" target="_blank" className="card-body px-4 py-4">
               <h4>AVATAR - Avaliações de times ágeis e Registro de atestados</h4>
-              <p className="mx-5">Sistema para registro de atestados e avaliações de equipes ágeis</p>
+              <p className="mx-5">Sistema para registro de atestados e avaliações de equipes ágeis. Minha participação foi no full-stack (back e front)</p>
               <p className="mx-5">Resultado: Interface intuitiva que possui métricas sobre as informações</p>
               <img className="projects-image mb-3 mx-5" src={avatar.src} alt="AVATAR" />
               <div className="skills-icons mx-5 my-3">
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
           <div className="card gradient-custom-right">
             <a href="https://github.com/RafaMatesco/Feira-tecnica-2022" target="_blank" className="card-body px-4 py-4">
               <h4>Health Calculator</h4>
-              <p className="mx-5">Calculadora de saúde que gera informações como IMC e gasto calórico a partir de dados inseridos.</p>
+              <p className="mx-5">Calculadora de saúde que gera informações como IMC e gasto calórico a partir de dados inseridos. Participei no full-stack</p>
               <p className="mx-5">Resultado: Ferramenta prática para consulta rápida de indicadores de saúde.</p>
               <img className="projects-image mx-5 mb-3" src={health_calculator.src} alt="Quadro de avisos" />
               <div className="skills-icons mx-5 my-3">
