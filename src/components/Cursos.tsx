@@ -4,7 +4,7 @@ const Cursos: React.FC = () => {
   return (
     <div className="cursos mb-5" id="cursos">
       <h1 className="title neon-glow">
-        <i className="bi bi-book"></i> Cursos e certificações
+        <i className="bi bi-book"></i> Cursos e certificados
       </h1>
       <div className="cursos-container">
         <div className="cursos-category px-5 mb-3">
