@@ -20,7 +20,6 @@ export default function Home() {
     mainRef.current?.style.setProperty("--glow-y", `${Math.round((y / rect.height) * 100)}%`);
   };
 
-
   return (
     <div className="polkadot">
       <div
@@ -36,11 +35,11 @@ export default function Home() {
 
         <div className="main">
           <AboutMe></AboutMe>
-          <Curriculo></Curriculo>
-          <Cursos></Cursos>
+          <Contatos></Contatos>
           <Skills></Skills>
           <Projects></Projects>
-          <Contatos></Contatos>
+          <Curriculo></Curriculo>
+          <Cursos></Cursos>
         </div>
       </div>
     </div>

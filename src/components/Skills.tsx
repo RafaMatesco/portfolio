@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills: React.FC = () => {
   return (
-    <div className="skills mb-5" id="skills">
+    <div className="skills mb-3" id="skills">
       <h1 className="title neon-glow">
         <i className="bi bi-tools"></i> Habilidades
       </h1>

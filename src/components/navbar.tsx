@@ -77,13 +77,10 @@ const Navbar: React.FC = () => {
           <div className="collapse navbar-collapse justify-content-end pe-4" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-link mx-3" href="#" onClick={profileClick}>
-                <i className="bi bi-person" id="homeIcon"></i>
+                <i className="bi bi-person"></i>
               </a>
-              <a className={`nav-link mx-3`} href="#curriculo" onClick={curriculoClick}>
-                <i className="bi bi-mortarboard"></i>
-              </a>
-              <a className={`nav-link mx-3`} href="#cursos" onClick={cursosClick}>
-                <i className="bi bi-book"></i>
+              <a className={`nav-link mx-3`} href="#contatos" onClick={contatosClick}>
+                <i className="bi bi-envelope"></i>
               </a>
               <a className={`nav-link mx-3`} href="#skills" onClick={skillsClick}>
                 <i className="bi bi-tools"></i>
@@ -91,8 +88,11 @@ const Navbar: React.FC = () => {
               <a className={`nav-link mx-3`} href="#projects" onClick={projectsClick}>
                 <i className="bi bi-folder"></i>
               </a>
-              <a className={`nav-link mx-3`} href="#contatos" onClick={contatosClick}>
-                <i className="bi bi-envelope"></i>
+              <a className={`nav-link mx-3`} href="#curriculo" onClick={curriculoClick}>
+                <i className="bi bi-mortarboard"></i>
+              </a>
+              <a className={`nav-link mx-3`} href="#cursos" onClick={cursosClick}>
+                <i className="bi bi-book"></i>
               </a>
             </div>
           </div>

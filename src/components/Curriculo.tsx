@@ -2,7 +2,7 @@ import React from "react";
 
 const Curriculo: React.FC = () => {
   return (
-    <div className="curriculo mb-5" id="curriculo">
+    <div className="curriculo mb-3" id="curriculo">
       <h1 className="title neon-glow">
         <i className="bi bi-mortarboard"></i> Formação
       </h1>

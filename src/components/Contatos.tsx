@@ -3,7 +3,7 @@ import React from "react";
 const Contatos: React.FC = () => {
   return (
     <div className="contatos mb-5" id="contatos">
-      <h1 className="title neon-glow">
+      <h1 className="title neon-glow ctt">
         <i className="bi bi-envelope"></i> Contatos
       </h1>
       <div className="contatos-container">

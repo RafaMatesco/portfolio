@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="about-me mb-5" id="about-me">
+    <div className="about-me mb-3" id="about-me">
       <h1 className="title neon-glow">Sobre mim</h1>
       <p className="px-5">
         <span>Atualmente sigo minha paixão pela área de TI e sou desenvolvedor full-stack. </span>

@@ -243,13 +243,16 @@ footer {
   overflow: hidden;
 }
 
+.ctt{
+  height: 50%;
+}
 .contatos {
-  text-align: center;
-  height: 20vh;
+  text-align: start;
+  height: 18vh;
 }
 .contatos-container {
   display: grid;
-  place-items: center;
+  place-items: start;
   align-items: baseline;
   position: relative;
   min-height: 60%;
