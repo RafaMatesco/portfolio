@@ -13,7 +13,7 @@ const Profile: React.FC = () => {
           <div>
             Fullstack dev <div className="vr"></div> Técnico em informática
           </div>
-          <a href="/curriculo2025.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/curriculo2025.2.pdf" target="_blank" rel="noopener noreferrer">
             <button type="button" className="btn px-0 neon-glow">
               Veja meu currículo!
             </button>
